@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         MortgageCalculator calc = new MortgageCalculator();
+        calc.getMortgageInput();
         double unformattedPayment = calc.calculateMortage();
         Locale locale = new Locale("en", "US");
         System.out.println(NumberFormat.getCurrencyInstance(locale).format(unformattedPayment));
